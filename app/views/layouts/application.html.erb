@@ -11,14 +11,12 @@
 				<div id="header">
 					<div id="logo">
 						<h1><a href="#">Expensure</a></h1>
-						<p> making repayments easy</p>
+						<p>making repayments easy</p>
 					</div>
 					<div id="menu">
 						<ul>
 							<li class="current_page_item"><a href="#">Home</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="#">Login</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
@@ -26,10 +24,9 @@
 				</div>
 			</div>
 			<!-- end #header -->
+			<%= yield :layout => "layouts/header" %>
 			
 			<%= yield :layout => "layouts/simple" %>
-			
-			<%= yield :layout %>
 			
 			<div id="footer">
 				<!-- Please leave the link to http://www.100webhosting.com intact -->
